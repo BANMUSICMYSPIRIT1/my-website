@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Coins</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .circle {
+      border: 1px solid #000;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    /* Username bar */
+    .username-bar {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .username-bar img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .username-bar input {
+      border: none;
+      outline: none;
+      flex: 1;
+    }
+
+    /* Recharge Section */
+    .recharge-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .recharge-sub {
+      color: #b22222;
+      font-size: 14px;
+      margin: 5px 0 15px 0;
+    }
+
+    .coin-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .coin-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .coin-item img {
+      width: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .coin-item.custom {
+      border: 2px solid #000;
+      cursor: pointer;
+    }
+
+    /* Invite & Get Rewards */
+    .invite {
+      margin: 20px 0;
+    }
+
+    .invite img {
+      width: 24px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .invite p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .invite small {
+      font-size: 12px;
+      color: gray;
+    }
+
+    /* Footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    .footer .right {
+      color: #b22222;
+      cursor: pointer;
+    }
+
+    .payment-logos {
+      margin: 15px 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .payment-logos img {
+      width: 40px;
+    }
+
+    /* Buy Button */
+    .buy-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <span>Get Coins</span>
+      <div class="header-icons">
+        <div class="circle">…</div>
+        <div class="circle">?</div>
+      </div>
+    </div>
+
+    <!-- Username bar -->
+    <div class="username-bar">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok Logo">
+      <input type="text" placeholder="Enter username">
+    </div>
+
+    <!-- Recharge -->
+    <div class="recharge-title">Recharge</div>
+    <div class="recharge-sub">Save around 25% with a lower third-party service fee.</div>
+
+    <div class="coin-list">
+      <div class="coin-item"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="14">30<br>$0.31</div>
+      <div class="coin-item"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="14">350<br>$3.65</div>
+      <div class="coin-item"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="14">700<br>$7.25</div>
+      <div class="coin-item"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="14">1400<br>$14.49</div>
+      <div class="coin-item"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="14">3500<br>$36.20</div>
+      <div class="coin-item custom">Custom</div>
+    </div>
+
+    <!-- Invite -->
+    <div class="invite">
+      <p><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"> Invite & Get Rewards</p>
+      <small>check out this new feature!</small>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>special offer</span>
+      <span class="right">unlock 5% cash back ></span>
+    </div>
+
+    <!-- Payment Logos -->
+    <div class="payment-logos">
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="MasterCard">
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="Bank">
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="PayPal">
+    </div>
+
+    <!-- Buy Button -->
+    <button class="buy-btn">Buy for $0.31</button>
+  </div>
+</body>
+</html>
